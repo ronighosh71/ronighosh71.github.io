@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roni Ghosh — Analyzer Engineer | Muscat, Oman</title>
+  <meta name="description" content="Roni Ghosh — Experienced Analyzer Engineer with 9+ years of hands-on experience in CAAQMS and CEMS. Currently based in Muscat, Oman." />
+
+  <link rel="icon" href="roni.jpg" type="image/jpeg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ronighosh.netlify.app/" />
+  <meta property="og:title" content="Roni Ghosh — Analyzer Engineer | Muscat, Oman" />
+  <meta property="og:description" content="Experienced Analyzer Engineer with 9+ years of hands-on experience in CAAQMS and CEMS — installation, calibration, troubleshooting, and maintenance. Based in Muscat, Oman." />
+  <meta property="og:image" content="https://ronighosh.netlify.app/roni.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Roni Ghosh — Analyzer Engineer | Muscat, Oman" />
+  <meta name="twitter:description" content="Experienced Analyzer Engineer with 9+ years of hands-on experience in CAAQMS and CEMS. Currently based in Muscat, Oman." />
+  <meta name="twitter:image" content="https://ronighosh.netlify.app/roni.jpg" />
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: rgba(255, 255, 255, 0.05);
+      --border: rgba(255, 255, 255, 0.12);
+      --text: #f4f7ff;
+      --muted: #aab4d4;
+      --accent: #6ee7ff;
+      --accent-2: #a78bfa;
+      --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      --radius: 18px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(110, 231, 255, 0.12), transparent 35%),
+        radial-gradient(circle at 85% 25%, rgba(167, 139, 250, 0.12), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    .container { width: min(1100px, 90%); margin: 0 auto; }
+
+    .navbar {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 16, 32, 0.75);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+    .logo { font-size: 1.3rem; font-weight: 800; letter-spacing: -0.02em; }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { color: var(--muted); font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    .menu-btn { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+    .hero { min-height: 85vh; display: flex; align-items: center; text-align: center; padding: 4rem 0; }
+    .hero-photo {
+      display: block;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 3px solid var(--accent);
+      box-shadow: 0 0 30px rgba(110, 231, 255, 0.3);
+      margin: 0 auto 1.5rem;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.4rem 0.9rem; border: 1px solid var(--border);
+      border-radius: 999px; background: var(--card); font-size: 0.85rem; margin-bottom: 1.5rem;
+    }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #34d399; box-shadow: 0 0 10px #34d399; }
+    .hero h1 { font-size: clamp(2.4rem, 6vw, 4.3rem); line-height: 1.1; margin-bottom: 0.5rem; }
+    .gradient-text {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .hero .subtitle { font-size: 1.3rem; color: var(--accent); margin-bottom: 1rem; font-weight: 500; }
+    .hero-desc { max-width: 620px; margin: 0 auto 2rem; color: var(--muted); font-size: 1.05rem; }
+
+    .btn-row { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      padding: 0.8rem 1.4rem; border-radius: 12px; font-weight: 600;
+      transition: transform 0.2s; display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #08101f; }
+    .btn-secondary { border: 1px solid var(--border); background: var(--card); }
+    .btn-cv { background: rgba(110, 231, 255, 0.1); border: 1px solid var(--accent); color: var(--accent); }
+    .btn-view { background: rgba(167, 139, 250, 0.1); border: 1px solid var(--accent-2); color: var(--accent-2); }
+
+    section { padding: 4.5rem 0; }
+    .section-head { margin-bottom: 2rem; }
+    .eyebrow { color: var(--accent); text-transform: uppercase; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow); }
+
+    .about-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 1.2rem; }
+    .about-card p { color: var(--muted); margin-bottom: 0.8rem; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .stat {
+      padding: 1.2rem; border-radius: var(--radius);
+      background: var(--card); border: 1px solid var(--border);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .stat strong { font-size: 1.6rem; color: var(--accent); }
+    .stat span { font-size: 0.85rem; color: var(--muted); }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2rem; }
+    .skill-card:hover { border-color: rgba(110, 231, 255, 0.4); }
+    .icon { font-size: 1.5rem; margin-bottom: 0.8rem; }
+    .skill-card h3, .project-card h3 { font-size: 1.1rem; margin-bottom: 0.4rem; }
+    .skill-card p, .project-card p { color: var(--muted); font-size: 0.9rem; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .project-card:hover { border-color: rgba(167, 139, 250, 0.5); }
+    .project-tag {
+      display: inline-block; padding: 0.2rem 0.6rem;
+      background: rgba(167, 139, 250, 0.15); color: #c4b5fd;
+      border-radius: 999px; font-size: 0.75rem; margin-bottom: 0.8rem;
+    }
+    .project-card a { display: inline-block; margin-top: 1rem; color: var(--accent); font-size: 0.85rem; font-weight: 600; }
+
+    .contact-box {
+      text-align: center; padding: 3rem 1.5rem; border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(110, 231, 255, 0.08), rgba(167, 139, 250, 0.08));
+      border: 1px solid var(--border);
+    }
+    .contact-box h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 0.5rem; }
+    .contact-box > p { max-width: 500px; margin: 0.5rem auto 2rem; color: var(--muted); }
+
+    .contact-links {
+      display: flex; justify-content: center; flex-wrap: wrap;
+      gap: 1rem; margin-top: 1.5rem;
+    }
+    .contact-link {
+      display: flex; align-items: center; gap: 0.6rem;
+      padding: 0.8rem 1.2rem;
+      border: 1px solid var(--border); border-radius: 12px;
+      background: var(--card);
+      font-size: 0.95rem; font-weight: 500;
+      text-align: left;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .contact-link:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .contact-link .cl-icon { font-size: 1.2rem; }
+    .contact-link .cl-label { color: var(--muted); font-size: 0.8rem; display: block; }
+    .contact-link .cl-value { color: var(--text); font-size: 0.9rem; }
+
+    footer { border-top: 1px solid var(--border); padding: 1.5rem 0; color: var(--muted); font-size: 0.85rem; }
+    .footer-inner { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+
+    @media (max-width: 800px) {
+      .about-grid, .projects-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 60px; left: 5%; right: 5%;
+        background: #0b1020; padding: 1rem;
+        border: 1px solid var(--border); border-radius: 12px;
+      }
+      .menu-btn { display: block; }
+      .hero-photo { width: 160px; height: 160px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Roni Ghosh<span>.</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <img src="roni.jpg" alt="Roni Ghosh" class="hero-photo" />
+
+        <div class="hero-badge"><span class="dot"></span> Muscat, Oman</div>
+        <h1>Hi, I'm <span class="gradient-text">Roni Ghosh</span>.</h1>
+        <p class="subtitle">Experienced Analyzer Engineer</p>
+        <p class="hero-desc">
+          9+ years of hands-on experience in CAAQMS and CEMS —
+          installation, calibration, troubleshooting, and maintenance across
+          oil &amp; gas, petrochemical, and process facilities.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-view" href="roni-cv.pdf" target="_blank">👁️ View CV</a>
+          <a class="btn btn-cv" href="roni-cv.pdf" download>📄 Download CV</a>
+          <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">About Me</div>
+          <h2>Who I Am</h2>
+          <p>A brief overview of my professional background.</p>
+        </div>
+        <div class="about-grid">
+          <div class="card about-card">
+            <h3>My Story</h3>
+            <p>
+              I'm Roni, an Analyzer Engineer with over 9 years of hands-on field experience
+              in Environment Monitoring Instruments, currently based in
+              <strong>Muscat, Oman</strong>.
+            </p>
+            <p>
+              My work spans the complete lifecycle of analyzer packages: site installation,
+              routine calibration, preventive maintenance, and complex troubleshooting
+              across major oil &amp; gas and petrochemical facilities.
+            </p>
+            <p>
+              I ensure critical process and environmental measurements remain precise, reliable, and compliant with safety standards.
+            </p>
+          </div>
+          <div class="stats">
+            <div class="stat"><strong>9+</strong><span>Years Experience</span></div>
+            <div class="stat"><strong>Muscat</strong><span>Based in Oman</span></div>
+            <div class="stat"><strong>50+</strong><span>Analyzers Maintained</span></div>
+            <div class="stat"><strong>24/7</strong><span>Field Readiness</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Skills</div>
+          <h2>Core Competencies</h2>
+          <p>Key technical proficiencies and field expertise.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="card skill-card">
+            <div class="icon">🔬</div>
+            <h3>Analyzer Calibration</h3>
+            <p>Gas &amp; liquid analyzers: O₂, CO, CO₂, H₂S, SO₂, pH, conductivity, and gas chromatographs.</p>
+          </div>
+          <div class="card skill-card">
+            <div class="icon">🔧</div>
+            <h3>Commissioning &amp; Startup</h3>
+            <p>Site surveys, analyzer verification, system loop validation, and startup support.</p>
+          </div>
+          <div class="card skill-card">
+            <div class="icon">⚡</div>
+            <h3>Troubleshooting</h3>
+            <p>Root-cause diagnostics for measurement drift, signal instability, and sample lag issues.</p>
+          </div>
+          <div class="card skill-card">
+            <div class="icon">📋</div>
+            <h3>Preventive Maintenance</h3>
+            <p>Routine PM scheduling, consumable replacements, and critical spare-parts management.</p>
+          </div>
+          <div class="card skill-card">
+            <div class="icon">📐</div>
+            <h3>Sample Conditioning Systems</h3>
+            <p>Filtration, fast-loops, pressure/temperature regulation, and safe sample handling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Experience</div>
+          <h2>Key Projects &amp; Highlights</h2>
+          <p>A look at recent engineering engagements.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="card project-card">
+            <span class="project-tag">Oil &amp; Gas</span>
+            <h3>CEMS Overhaul &amp; Tuning</h3>
+            <p>Led calibration and maintenance of Continuous Emission Monitoring Systems across plant units, ensuring full environmental compliance.</p>
+            <a href="#contact">Contact for details →</a>
+          </article>
+          <article class="card project-card">
+            <span class="project-tag">Petrochemical</span>
+            <h3>Analyzer Loop Commissioning</h3>
+            <p>Successfully commissioned 20+ analyzer loops including sample conditioning racks and measurement validation.</p>
+            <a href="#contact">Contact for details →</a>
+          </article>
+          <article class="card project-card">
+            <span class="project-tag">Maintenance</span>
+            <h3>Reliability &amp; PM Optimization</h3>
+            <p>Implemented structured preventive maintenance routines across 50+ field analyzers, lowering unplanned failure rates significantly.</p>
+            <a href="#contact">Contact for details →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Let's Connect</h2>
+          <p>
+            Looking for an experienced analyzer engineer in the Muscat / Oman region?
+            I am open to new opportunities and technical collaborations.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn btn-view" href="roni-cv.pdf" target="_blank">👁️ View CV</a>
+            <a class="btn btn-cv" href="roni-cv.pdf" download>📄 Download CV</a>
+          </div>
+
+          <!-- ⬇️ UPDATE YOUR REAL EMAIL & LINKEDIN BELOW ⬇️ -->
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:ronighosh19@gmail.com">
+              <span class="cl-icon">📧</span>
+              <span>
+                <span class="cl-label">Email</span>
+                <span class="cl-value">ronighosh19@gmail.com</span>
+              </span>
+            </a>
+            <a class="contact-link" href="tel:+96876410329">
+              <span class="cl-icon">📱</span>
+              <span>
+                <span class="cl-label">Phone (Oman)</span>
+                <span class="cl-value">+968 7641 0329</span>
+              </span>
+            </a>
+            <a class="contact-link" href="tel:+91 8967773354">
+              <span class="cl-icon">📱</span>
+              <span>
+                <span class="cl-label">Phone (India)</span>
+                <span class="cl-value">+91 8967773354</span>
+              </span>
+            </a>
+            <a class="contact-link" href="https://linkedin.com/in/ronighosh19" target="_blank" rel="noopener">
+              <span class="cl-icon">💼</span>
+              <span>
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-value">linkedin.com/in/ronighosh19</span>
+              </span>
+            </a>
+            <a class="contact-link" href="https://maps.google.com/?q=Muscat,Oman" target="_blank" rel="noopener">
+              <span class="cl-icon">📍</span>
+              <span>
+                <span class="cl-label">Location</span>
+                <span class="cl-value">Muscat, Oman</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Roni Ghosh — Analyzer Engineer, Muscat, Oman.</p>
+      <p>Professional Profile</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var menuBtn = document.getElementById("menuBtn");
+    var navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function () {
+      navLinks.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(function (link) {
+      link.addEventListener("click", function () {
+        navLinks.classList.remove("open");
+      });
+    });
+  </script>
+
+</body>
+</html>
+
+
